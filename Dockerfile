@@ -2,7 +2,7 @@ FROM golang:latest AS builder
 WORKDIR /app
 
 # https://tailscale.com/kb/1118/custom-derp-servers/
-RUN go install tailscale.com/cmd/derper@v1.82.5
+RUN go install tailscale.com/cmd/derper@v1.86.5
 
 FROM ubuntu:latest
 WORKDIR /app
